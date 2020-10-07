@@ -1,0 +1,60 @@
+{
+	"env": {
+		"commonjs": true,
+		"es6": true,
+		"jest": true,
+		"node": true
+	},
+	"extends": [
+		"airbnb-base",
+		"plugin:security/recommended"
+	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"ignorePatterns": [
+		"**/node_modules/"
+	],
+	"plugins": [
+		"security"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2018
+	},
+	"rules": {
+		"arrow-parens": [
+			"error",
+			"as-needed"
+		],
+		"brace-style": "off",
+		"camelcase": "off",
+		"class-methods-use-this": "off",
+		"func-names": "off",
+		"function-paren-newline": "off",
+		"indent": [
+			"error",
+			2
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"max-classes-per-file": "off",
+		"no-await-in-loop": "off",
+		"no-bitwise": "off",
+		"no-continue": "off",
+		"no-plusplus": "off",
+		"no-restricted-syntax": "off",
+		"no-underscore-dangle": "off",
+		"quotes": [
+			"error",
+			"single"
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"security/detect-object-injection": "off"
+	}
+}
